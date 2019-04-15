@@ -57,7 +57,7 @@ function jumper() {
 }
 
  function keyPressed() {
-      if (keyCode === 32 ) {
+      if (keyCode === 32) {
       jumper.up();
 }
    
