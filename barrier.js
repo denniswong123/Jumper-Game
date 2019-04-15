@@ -21,14 +21,13 @@ this.up = function() {
   
 this.move = function() {
   if (this.x > 0){
-    this.x -= speed;
+    this.x -= this.velocity;
   }
   else {
     this.x = w;
     this.y = Math.floor(Math.random() * h)-10;
     speed += 3;
     score += 1;
-    barrierY += 10;
    }
    
    this.score = function(){

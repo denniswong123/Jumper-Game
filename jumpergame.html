@@ -4,33 +4,37 @@
     body {
       margin: 0;
       padding: 0;
+      overflow: hidden;
       
     };
     
-    #score{
+    #score {
       position: absolute;
-      font-size: 30px;
-      color: white;
+      font-size: 40px;
       margin: 0;
       padding: 0;
       
     };
     
   </style>
+  
   <script src="p5.min.js"></script>
   <script src="barrier.js"></script>
   <script src="jumper.js"></script>
   <script src="p5.collide2d.min.js"></script>
+  
 </head>
 
 <body>
+  
 <h1 id ="score"></h1>
+
 <script>
+
 var h = window.innerHeight;
 var w = window.innerWidth;
 var jumper = new jumper();
 var barrier = new barrier();
-
 var points = 0;
 
 function setup() {
@@ -46,6 +50,7 @@ jumper.collide();
 barrier.move();
 barrier.show();
 barrier.score();
+
 }
 
 </script>
