@@ -8,14 +8,6 @@
       
     };
     
-    #score {
-      position: absolute;
-      font-size: 40px;
-      margin: 0;
-      padding: 0;
-      
-    };
-    
   </style>
   
   <script src="p5.min.js"></script>
@@ -37,23 +29,21 @@ var jumper = new jumper();
 var barrier = new barrier();
 var points = 0;
 
-function setup() {
-  createCanvas(w,h);
-}
 
 function draw() {
-background(255);
+background(img);
 jumper.show();
 jumper.update();
 jumper.move();
 jumper.collide();
 barrier.move();
 barrier.show();
-//barrier.score();
-
+textSize(30);
+      fill(color("white"));
+      text("Score: " + points, 25, 30);
 }
 
 </script>
-
+<p id="Score"></p>
 </body>
 </html>

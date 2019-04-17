@@ -1,3 +1,8 @@
+function setup() {
+  createCanvas(w,h);
+  img = loadImage('http://ae01.alicdn.com/kf/HTB1DGtcmkZmBKNjSZPiq6xFNVXa4.jpg_q50.jpg');
+}
+
 function jumper() {
   this.x = 50;
   this.y = h-50;

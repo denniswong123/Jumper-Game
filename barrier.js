@@ -1,8 +1,8 @@
 function barrier() {
-  this.leftPull = 0.5;
+  this.leftPull = 3;
   this.velocity = 0;
-  this.height = 47;
-  this.width = 75;
+  this.height = 20;
+  this.width = 80;
   this.x = w + this.width;
   this.y = Math.floor((Math.random() * h) + 50);
   this.show = function () {
@@ -20,6 +20,8 @@ function barrier() {
           this.x = w + this.width;
           this.y = Math.floor((Math.random() * h) + 10);
           this.velocity = 0;
+          points += 1;
       }
   }
+  
 }
