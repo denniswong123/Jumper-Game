@@ -1,0 +1,7 @@
+#introText {
+  font-size: 40px;
+}
+
+#introText:hover {
+  font-size: 100px;
+}

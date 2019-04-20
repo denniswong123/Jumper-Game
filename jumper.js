@@ -1,6 +1,7 @@
 function setup() {
   createCanvas(w,h);
   img = loadImage('http://ae01.alicdn.com/kf/HTB1DGtcmkZmBKNjSZPiq6xFNVXa4.jpg_q50.jpg');
+  dw = loadImage('https://vignette.wikia.nocookie.net/stexpanded/images/f/fb/USS_Prometheus_%28post_2386_refit%29.png/revision/latest?cb=20170507024819')
 }
 
 function jumper() {
@@ -11,8 +12,8 @@ function jumper() {
   this.velocity = 0; //velocity of player
   
   this.show = function() {
-    fill(color('red'));
-    rect(this.x, this.y, 50, 50);
+    image(dw,this.x,this.y,180,100)
+    rect(this.x, this.y);
   };
   
   this.up = function() {

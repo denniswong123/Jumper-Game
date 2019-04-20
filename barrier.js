@@ -1,14 +1,14 @@
 function barrier() {
-  this.leftPull = 3;
+  this.leftPull = 4;
   this.velocity = 0;
-  this.height = 20;
-  this.width = 80;
+  this.height = 15;
+  this.width = 60;
   this.x = w + this.width;
   this.y = Math.floor((Math.random() * h) + 50);
   this.show = function () {
       this.x;
       this.y;
-      fill(color('green'));
+      fill(color('red'));
       strokeWeight(0);
       rect(this.x, this.y, this.width, this.height);
 

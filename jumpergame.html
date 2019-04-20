@@ -28,6 +28,7 @@ var w = window.innerWidth;
 var jumper = new jumper();
 var barrier = new barrier();
 var points = 0;
+var dw;
 
 
 function draw() {
@@ -38,9 +39,9 @@ jumper.move();
 jumper.collide();
 barrier.move();
 barrier.show();
-textSize(30);
+textSize(40);
       fill(color("white"));
-      text("Score: " + points, 25, 30);
+      text("Score: " + points, 600, 40);
 }
 
 </script>
