@@ -1,7 +1,7 @@
 function barrier() {
-  this.leftPull = 4;
+  this.leftPull = 3;
   this.velocity = 0;
-  this.height = 15;
+  this.height = 10;
   this.width = 60;
   this.x = w + this.width;
   this.y = Math.floor((Math.random() * h) + 50);

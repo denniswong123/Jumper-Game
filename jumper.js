@@ -66,5 +66,9 @@ function jumper() {
       if (keyCode === 32) {
       jumper.up();
 }
+
+      if (keyCode === 82) {
+      window.location="jumpergame.html";
+}
    
  }
